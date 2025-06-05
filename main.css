@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+.quattrocento-regular {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quattrocento-bold {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    background-color: #00000F;
+    color: #FFFFFF;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3%;
+}
+
+.hash {
+    color: #FF0000;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+li a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+footer {
+    color: grey;
+    margin-top: 30px;
+}

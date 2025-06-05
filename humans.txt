@@ -1,0 +1,8 @@
+/* AUTHOR */
+Name: Christian Kreutz
+Location: Duisburg, Germany
+
+
+/* SITE */
+Last update: 2025-06-06
+Standards: HTML5, CSS3
