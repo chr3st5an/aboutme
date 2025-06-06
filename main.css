@@ -81,6 +81,17 @@ li a:hover {
     text-decoration: underline;
 }
 
+pre code span {
+    color: #FF0000;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 footer {
     color: grey;
 }

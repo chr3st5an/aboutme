@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Christian Kreutz">
-        <meta name="robots" content="noindex">
+        <meta name="robots" content="noindex, nofollow">
         <title>chr3st5an</title>
         <link type="text/css" rel="stylesheet" href="./main.css"/>
         <link type="text/plain" rel="author" href="./humans.txt"/>
@@ -74,14 +74,14 @@
         <h3>
             <i>Let's talk if you understand the following PostgreSQL query :)</i>
             <pre><code>
-<span style="color: #ff0000">>>></span> SELECT lastname("#")
-<span style="color: #ff0000">...</span>      , COUNT(DISTINCT (SELECT COUNT(NULL) FROM characters))
-<span style="color: #ff0000">...</span>      , RANK('Christian') WITHIN GROUP (ORDER BY firstname ASC)
-<span style="color: #ff0000">...</span>   FROM characters "#"(id, firstname, lastname)
-<span style="color: #ff0000">...</span>  GROUP BY ALL 1, firstname ^@ 'A'
-<span style="color: #ff0000">...</span> WINDOW w AS (PARTITION BY lastname ORDER BY COUNT(*) DESC)
-<span style="color: #ff0000">...</span>  ORDER BY RANK() OVER w <> 1
-<span style="color: #ff0000">...</span>  FETCH FIRST ROWS WITH TIES;
+<span>>>></span> SELECT lastname("#")
+<span>...</span>      , COUNT(DISTINCT (SELECT COUNT(NULL) FROM characters))
+<span>...</span>      , RANK('Christian') WITHIN GROUP (ORDER BY firstname ASC)
+<span>...</span>   FROM characters "#"(id, firstname, lastname)
+<span>...</span>  GROUP BY ALL 1, firstname ^@ 'A'
+<span>...</span> WINDOW w AS (PARTITION BY lastname ORDER BY COUNT(*) DESC)
+<span>...</span>  ORDER BY RANK() OVER w <> 1
+<span>...</span>  FETCH FIRST ROWS WITH TIES;
             </code></pre>
         </h3>
 
