@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@font-face {
+    font-family: "Quattrocento";
+    src: url("./fonts/Quattrocento-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Quattrocento";
+    src: url("./fonts/Quattrocento-Bold.ttf") format("truetype");
+}
 
 .quattrocento-regular {
   font-family: "Quattrocento", serif;
