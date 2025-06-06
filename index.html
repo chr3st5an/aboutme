@@ -73,17 +73,16 @@
         </h2>
         <h3>
             <i>Let's talk if you understand the following PostgreSQL query :)</i>
-            <pre>
-                <code>
+            <pre><code>
 <span style="color: #ff0000">>>></span> SELECT lastname("#")
 <span style="color: #ff0000">...</span>      , COUNT(DISTINCT (SELECT COUNT(NULL) FROM characters))
 <span style="color: #ff0000">...</span>      , RANK('Christian') WITHIN GROUP (ORDER BY firstname ASC)
 <span style="color: #ff0000">...</span>   FROM characters "#"(id, firstname, lastname)
 <span style="color: #ff0000">...</span>  GROUP BY ALL 1, firstname ^@ 'A'
-<span style="color: #ff0000">...</span>  ORDER BY RANK() OVER (PARTITION BY lastname ORDER BY COUNT(*) DESC) <> 1
+<span style="color: #ff0000">...</span> WINDOW w AS (PARTITION BY lastname ORDER BY COUNT(*) DESC)
+<span style="color: #ff0000">...</span>  ORDER BY RANK() OVER w <> 1
 <span style="color: #ff0000">...</span>  FETCH FIRST ROWS WITH TIES;
-                </code>
-            </pre>
+            </code></pre>
         </h3>
 
         <footer>
