@@ -16,7 +16,7 @@
             </div>
         </h1>
         <h3>
-            Hello stranger! My name is Christian, and I am currently a student at the
+            Hello <span style="color: #ff0000">Stranger</span>! My name is Christian, and I am currently a student at the
             University of Duisburg-Essen, studying Software Engineering and tutoring
             students in the subjects <q>Modelle&nbsp;der&nbsp;Informatik</q> and
             <q>Datenbankmanagementsysteme</q>. My main interests are in the field of
@@ -74,13 +74,15 @@
         <h3>
             <i>Let's talk if you understand the following PostgreSQL query :)</i>
             <pre>
-SELECT lastname("#")
-     , COUNT(DISTINCT (SELECT COUNT(NULL) FROM characters))
-     , RANK('Christian') WITHIN GROUP (ORDER BY firstname ASC)
-  FROM characters "#"(id, firstname, lastname)
- GROUP BY ALL 1, firstname ^@ 'A'
- ORDER BY RANK() OVER (PARTITION BY lastname ORDER BY COUNT(*) DESC) <> 1
- FETCH FIRST ROWS WITH TIES;
+                <code>
+<span style="color: #ff0000">>>></span> SELECT lastname("#")
+<span style="color: #ff0000">...</span>      , COUNT(DISTINCT (SELECT COUNT(NULL) FROM characters))
+<span style="color: #ff0000">...</span>      , RANK('Christian') WITHIN GROUP (ORDER BY firstname ASC)
+<span style="color: #ff0000">...</span>   FROM characters "#"(id, firstname, lastname)
+<span style="color: #ff0000">...</span>  GROUP BY ALL 1, firstname ^@ 'A'
+<span style="color: #ff0000">...</span>  ORDER BY RANK() OVER (PARTITION BY lastname ORDER BY COUNT(*) DESC) <> 1
+<span style="color: #ff0000">...</span>  FETCH FIRST ROWS WITH TIES;
+                </code>
             </pre>
         </h3>
 
