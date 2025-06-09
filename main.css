@@ -8,12 +8,19 @@
     src: url("./fonts/Quattrocento-Bold.ttf") format("truetype");
 }
 
+html {
+    scrollbar-color: #FF0000 #00000F;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
 body {
     background-color: #00000F;
     color: #FFFFFF;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 3%;
+
 }
 
 @media screen and (max-width: 1200px) {
