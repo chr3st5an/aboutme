@@ -4,5 +4,5 @@ Location: Duisburg, Germany
 
 
 /* SITE */
-Last update: 2025-06-06
+Last update: 2025-06-10
 Standards: HTML5, CSS3
