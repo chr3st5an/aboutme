@@ -20,7 +20,6 @@ body {
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 3%;
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -69,7 +68,6 @@ body {
   user-select: none;
 }
 
-
 .hash {
     color: #FF0000;
     font-size: 1em;
@@ -77,13 +75,23 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-li a {
+#spotify {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+#spotify:hover {
+    color: #1DB954;
+    text-decoration: underline;
+}
+
+ul a {
     color: #FFFFFF;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 }
 
-li a:hover {
+ul a:hover {
     color: #FF0000;
     text-decoration: underline;
 }
