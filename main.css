@@ -47,6 +47,11 @@ body {
 
 }
 
+::selection {
+  color: red;
+  background: #0F0000;
+}
+
 .quattrocento-regular {
   font-family: "Quattrocento", serif;
   font-weight: 400;
